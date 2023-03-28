@@ -8,7 +8,7 @@ public class AppDbContext:DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        string path = "Server=localhost; Database=HealthCare; User Id=postgres; password=Bekmurod21";
+        string path = "Server = localhost; Database = Jadeed; User Id = postgres; password = Bekmurod21";
         optionsBuilder.UseNpgsql(path);
     }
     public DbSet<Address> Addresses { get; set; }
