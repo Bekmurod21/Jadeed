@@ -26,10 +26,7 @@ public class LibraryRepository : ILibraryRepository
     }
 
     public IQueryable<Library> SelectAllLibraryAsync()
-    {
-        var query = "select * from \"Libraries\"";
-        return appDbContext.Libraries.FromSqlRaw(query);
-    }
+     =>  appDbContext.Libraries;
 
     public async ValueTask<Library> SelectLibraryAsync(Predicate<Library> predicate)
     {

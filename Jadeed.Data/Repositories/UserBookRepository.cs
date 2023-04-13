@@ -25,10 +25,7 @@ public class UserBookRepository : IUserBookRepository
         return entity.Entity;
     }
     public IQueryable<UserBook> SelectAllUserBookAsync()
-    {
-        var query = "select * from \"UserBooks\"";
-        return appDbContext.UserBooks.FromSqlRaw(query);
-    }
+     => appDbContext.UserBooks;
     public async ValueTask<UserBook> SelectUserBookAsync(Predicate<UserBook> predicate)
     {
         return await appDbContext.UserBooks.FirstOrDefaultAsync(userbook => predicate(userbook));

@@ -26,10 +26,7 @@ public class BookRepository : IBookRepository
     }
 
     public IQueryable<Book> SelectAllBookAsync()
-    {
-        var query = "select * from \"Books\"";
-        return appDbContext.Books.FromSqlRaw(query);
-    }
+    => appDbContext.Books;
 
     public async ValueTask<Book> SelectBookAsync(Predicate<Book> predicate)
     {
