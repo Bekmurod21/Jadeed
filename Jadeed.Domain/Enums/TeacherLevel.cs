@@ -7,5 +7,8 @@ using System.Threading.Tasks;
 namespace Jadeed.Domain.Enums;
 
 public enum TeacherLevel : byte
-{ 
+{
+    High,
+    Middle,
+    Low
 }

@@ -8,4 +8,6 @@ namespace Jadeed.Domain.Enums;
 
 public enum GenderType : byte
 {
+    Male,
+    Female
 }

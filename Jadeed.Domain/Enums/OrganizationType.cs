@@ -8,4 +8,7 @@ namespace Jadeed.Domain.Enums;
 
 public enum OrganizationType : byte
 {
+    Institut,
+    School,
+    EducationCenter
 }

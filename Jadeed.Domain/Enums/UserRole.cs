@@ -8,4 +8,9 @@ namespace Jadeed.Domain.Enums;
 
 public enum UserRole : byte
 {
+    SuperAdmin,
+    Admin,
+    Teacher,
+    Student,
+    Parent
 }

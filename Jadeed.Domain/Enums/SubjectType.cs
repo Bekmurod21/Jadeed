@@ -8,4 +8,12 @@ namespace Jadeed.Domain.Enums;
 
 public enum SubjectType : byte
 {
+    Math,
+    English,
+    Russian,
+    History,
+    Chemistry,
+    Biology,
+    Geography,
+    Physics
 }
